@@ -1,0 +1,36 @@
+.iloc for integer based indexing and .loc for label based indexing.
+Both loc and iloc are row-first, column-second.
+example -->isse dataframe reviews ki 0th row select ho gai
+reviews.iloc[0]
+
+country   Italy                                                
+description    Aromas include tropical fruit, broom, brimston...
+                                     ...                        
+variety                                              White Blend
+winery                                                   Nicosia
+Name: 0, Length: 13, dtype: object
+
+example-->isse dataframe reviews ki 0th column select hoga
+
+reviews.iloc[:, 0]
+0            Italy
+1         Portugal
+            ...   
+129969      France
+129970      France
+
+Label-based selection
+The second paradigm for attribute selection is the one followed by the loc operator: label-based selection. In this paradigm, it's the data index value, not its position, which matters.
+
+For example, to get the first entry in reviews, we would now do the following:
+
+reviews.loc[0, 'country']
+'Italy'
+
+iloc is simpler
+
+iloc uses the 
+Python stdlib indexing scheme, where the 
+first element of the range is included and the last one excluded. 
+So 0:10 will select entries 0,...,9. loc, meanwhile, indexes inclusively. So 0:10 will select entries 0,...,10.
+
