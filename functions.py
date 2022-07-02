@@ -44,3 +44,14 @@ def reverse(s):
 s='stuti'
 print(reverse(s))
 
+question-->calculate factorial
+
+def factorial(n):
+  if n==0:
+    return 1 
+  else:
+    return n*(n-1)
+    
+inp=int(input("enter the number"))
+print("factorial is:",factorial(inp))
+
