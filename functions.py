@@ -33,3 +33,14 @@ def sum(numbers):
         total += x
     return total
 print(sum((8, 2, 3, 0, 7)))
+
+ques--->reverse a string
+
+def reverse(s):
+  rev=''
+  rev=''.join(reversed(s))
+  return rev
+  
+s='stuti'
+print(reverse(s))
+
