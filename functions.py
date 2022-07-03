@@ -55,3 +55,36 @@ def factorial(n):
 inp=int(input("enter the number"))
 print("factorial is:",factorial(inp))
 
+question--see if n is in range or out of range
+
+def test(n):
+  if n in range(3,9):
+    print(" number is in range",format(n))
+  else:
+    print("outside range")
+    
+test(12)
+
+# list of first 100 positive odd natural numbers using list comprehension.
+
+for i in range(0,100):
+  if i%2!=0:
+    print(i, end = " ")
+    
+by list comprehension :-
+  
+ def odd_numbers(n):
+    return [x for x in range(0, n) if x%2 != 0]
+
+print(odd_numbers(100))
+
+# list of numbers 
+list1 = [10, 21, 4, 45, 66, 93, 11] 
+  
+  
+# we can also print odd no's using lambda exp. 
+odd_nos = list(filter(lambda x: (x % 2 != 0), list1))
+  
+print("Odd numbers in the list: ", odd_nos) 
+
+
