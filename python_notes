@@ -1,0 +1,36 @@
+High level 
+rosumm 1991
+
+by default python prints in newline
+print('a','b',sep='@')
+a@b
+print(a)
+print(b)
+a
+b
+print('a','b',sep='#',end='@')
+a#b@
+
+end keyword prints letters in same line otherwise next line
+for i in 'geeksforgeeks':
+    print(i,end=' ')
+o/p:-
+g e e k s f o r g e e k s
+
+python modules can be imported by import keyword and then its libraries can be used as functions.
+import keyword
+  
+# printing all keywords at once using "kwlist()"
+print("The list of keywords is : ")
+print(keyword.kwlist)
+
+in keyword we can use with if statement or for statemnet for looping
+
+if 's' in 'geeksforgeeks':
+    print("s is part of geeksforgeeks")
+else:
+    print("s is not part of geeksforgeeks")
+    
+for i in 'geeksforgeeks':
+    print(i,end=' ')
+
