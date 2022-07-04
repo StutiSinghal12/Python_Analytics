@@ -33,4 +33,32 @@ else:
     
 for i in 'geeksforgeeks':
     print(i,end=' ')
+    
+question---> current version
+import sys
+print(sys.version)
 
+question-->
+\n \t for next line and space
+
+question --> print current date and time 
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+question--> print in specific format using formatted string option and format option
+# exam_st_date = (11, 12, 2014)
+# day = exam_st_date[0]
+# month = exam_st_date [1]
+# year = exam_st_date [2]
+# print(f'The examination will start from: {day}/{month}/{year}') 
+
+exam_st_date = (11,12,2014)
+print( "The examination will start from : {exam_st_date}".format(exam_st_date=exam_st_date).replace(',','/'))
+
+numbers=input("enter numbers")
+num=numbers.split(",")
+print(numbers)
+print(num)
+print(tuple(num))
