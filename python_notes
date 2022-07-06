@@ -109,4 +109,44 @@ Output:
 Left, center and right alignment with Formatting: 
 |Geeks     |   for    |     Geeks|
 
+Write a Python program to get a string made of the first 2 and the 
+last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+def fetch(ip):
+  if len(ip)<2:
+    return ' '
+  else:
+    return ip[0:2]+ip[-2:]
 
+print(fetch('w3resource'))
+print(fetch('w'))
+print(fetch('w3456'))
+
+o/p:-
+w3ce
+ 
+w356
+
+Write a Python function that takes a list of words and return the longest word and the length of the longest one.
+def lenof(words):
+  word_len=[]
+  for n in words:
+    word_len.append((len(n),n))
+  word_len.sort()
+  return word_len[-1][0], word_len[-1][1]  
+result=lenof(["php","python","exercises"])
+print("\nLongest word: ",result[1])
+print("Length of the longest word: ",result[0])
+
+write program to sort words alphabetically
+
+def lenof(words):
+  word_len=[]
+  for n in words:
+    word_len.append(n)
+  word_len.sort()
+  return word_len
+  
+ip=input("enter words")
+d=ip.split(',')
+
+print(lenof(d))
