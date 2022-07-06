@@ -150,3 +150,11 @@ ip=input("enter words")
 d=ip.split(',')
 
 print(lenof(d))
+
+diffrence between dates
+
+from datetime import date
+f_date = date(2014, 7, 2)
+l_date = date(2014, 7, 11)
+delta = l_date - f_date
+print(delta.days)
