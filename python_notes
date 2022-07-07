@@ -158,3 +158,11 @@ f_date = date(2014, 7, 2)
 l_date = date(2014, 7, 11)
 delta = l_date - f_date
 print(delta.days)
+
+Write a Python function to check whether a number is divisible by another number. Accept two integers values form the user.
+
+def multiple(m, n):
+	return True if m % n == 0 else False
+
+print(multiple(20, 5))
+print(multiple(7, 2))
