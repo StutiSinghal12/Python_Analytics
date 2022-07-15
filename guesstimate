@@ -1,0 +1,23 @@
+structure
+numbers
+quick checks on the efficiency of different methods?
+mind calculations and validate the magnitude of numbers?
+
+ques--->number of cigarette consumed monthly in India.
+
+1. proxy-->india population
+2. segment-->children below 16 and females dont drink
+3.calculation speed-->3000/3 than 2999/3. In such cases right the answer as 1000 (-) . 
+                      This indicates the number is slightly lesser than 1000 and can be compensated in further calculations.
+4.Validate number magnitude : It is always a good idea to keep on validating intermediate numbers using your experience and sense checks.
+
+https://www.analyticsvidhya.com/blog/2014/01/tips-crack-guess-estimate-case-study/
+
+Some ground rules to be followed while doing a guesstimate
+Following are some factors one should keep in mind while solving a guess estimate problem :
+
+Analyze all possible uses of the subject. For example, while estimating the number of tennis balls in India, one should consider balls being used in tennis, cricket and all other sports which are potential users of tennis balls.
+Keep population of your country, state and city on finger tips. As population is the most common proxy for many case studies, such numbers give a good starting point.
+Have a look on some key parameters for airline management : Many of guess estimate problems are related to airlines. A sense on the number of flights which normally stays in major airports, time lag between flight take off etc. helps.
+Draw neat diagrams to show the segmentation. This not only helps do calculations quickly but also makes it easier to redo the calculations on the segment level if required.
+Don’t do round off in the same direction. Such round off magnifies the error term. Putting a sign in front of rounded off number helps.
