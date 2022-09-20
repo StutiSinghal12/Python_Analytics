@@ -138,3 +138,51 @@ These problems can only be solved using method 1
 (for i in range(len(list))) but not method 2 (for element in list), as we must have the index of each element to get 
 more than 1 element at each iteration.
 
+# find duplicates
+
+def find_dupli(names):
+  dupli=[]
+
+  for i in range(len(names)):
+    n=i+1
+    for a in range(n,len(names)):
+      if names[i]==names[a] and names[a] not in dupli:
+        dupli.append(names[i])
+  return dupli
+
+
+names = ["Aman", "Akanksha", "Divyansha", "Devyansh", 
+         "Aman", "Diksha", "Akanksha"]
+print(find_dupli(names))
+
+# password authentication
+import getpass
+database={"stuti":"1211","parth":"3987"}
+username=input("enter username")
+pwd=getpass.getpass("enter password")
+
+for i in database.keys():
+  if username==i:
+    while pwd!=database.get(i):
+          pwd=input("enter pwd again")
+    break
+print("verified")
+
+# palindrom or not
+def pali(str):
+  if str[:]==str[::-1]:
+    print("pali")
+  else:
+    print("not pali")
+
+pali("madam")
+
+# multiply a list
+list1=[1,2,-3,4]
+mul=1
+for i in range(len(list1)):
+  mul=mul*list1[i]
+print(mul)
+
+
+
